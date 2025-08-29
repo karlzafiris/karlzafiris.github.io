@@ -1,0 +1,43 @@
+* {
+    font-family: 'Consolas';
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    background: #2e3e2e;
+    color: #fff;
+    font-weight: 100;
+}
+section {
+    margin: 0.5em;
+    font-size: 22px;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 1em auto;
+    padding: 1em;
+}
+
+.title {
+    font-weight: 100; 
+    font-size: 30px;
+}
+.subtitle {
+    font-weight: 100;
+    font-size: 25px;
+    color: palegreen;
+}
+.description {
+    text-align: justify;
+    font-weight: 100 !important;
+}
+
+.row {
+    display: flex;
+}
+.col {
+    flex: 1;
+    text-align: justify;
+    margin: 1em;
+}
