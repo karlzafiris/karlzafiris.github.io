@@ -1,10 +1,18 @@
 * {
-    font-family: 'Consolas', monospace;
+    font-family: 'Consolas';
+    font-weight: 100;
     margin: 0;
     padding: 0;
 }
-body, html {
-    background: #fff;
+:root {
+    --main-color: #fff;
+    --blue: #0E2A83;
+}
+body {
+    background-image: url(./bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #000;
     font-weight: 100;
 }
@@ -13,23 +21,29 @@ section {
     font-size: 22px;
 }
 p, section {
-    font-size: 19px;
+    font-size: 20px;
 }
+
 .container {
     max-width: 1024px;
+    background: rgba(14, 42, 131, 0.95);
+    color: #fff;
     width: 100%;
-    margin: 1em auto;
+    margin: 2em auto;
     padding: 1em;
+    border: 8px solid #fff;
+    box-shadow: 0 0 10px #000;
 }
 
 .title {
-    font-weight: 100; 
-    font-size: 25px;
+    font-weight: 600; 
+    font-size: 32px;
+    
 }
 .subtitle {
     font-weight: 600;
-    font-size: 20px;
-    color: #000;
+    font-size: 22px;
+    color: var(--main-color);
 }
 .description {
     text-align: justify;
@@ -42,4 +56,19 @@ p, section {
 .col {
     flex: 1;
     text-align: justify;
+}
+a {
+    color: var(--main-color);
+    text-decoration: none;
+    background: var(--blue);
+    padding: .5em;
+    display: inline-block;
+    margin-bottom: .5em;
+    border: 1px solid #fff;
+    transition: background 0.45s ease-in-out;
+}
+a:hover {
+    background: #fff;
+    color: var(--blue);
+    border: none !important;
 }
